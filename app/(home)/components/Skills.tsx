@@ -3,6 +3,7 @@ import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "@/components/card-hover-effect";
 import {
+  SiCplusplus,
   SiCss3,
   SiFirebase,
   SiHtml5,
@@ -16,6 +17,10 @@ import {
 
 export default function Skills() {
   const skills = [
+    {
+      text:"C++",
+      Icon: SiCplusplus,
+    },
     {
       text: "HTML",
       Icon: SiHtml5,
@@ -31,10 +36,6 @@ export default function Skills() {
     {
       text: "React",
       Icon: SiReact,
-    },
-    {
-      text: "Next JS",
-      Icon: SiNextdotjs,
     },
     {
       text: "Tailwind CSS",

@@ -1,36 +1,37 @@
 import React from "react";
-import { SiChatbot, SiFirebase, SiReact, SiTailwindcss } from "react-icons/si";
+import { SiChatbot, SiExpensify, SiFirebase, SiGmail, SiNetflix, SiReact, SiSwiggy, SiTailwindcss } from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "@/components/direction-aware-hover";
+import { BiSolidCalculator } from "react-icons/bi";
 
 export default function Projects() {
   const projects = [
     {
       title: "Netflix GPT",
-      tech: [SiReact, SiTailwindcss, SiFirebase, SiChatbot],
-      link: "http://localhost:3000",
+      tech: [SiReact, SiTailwindcss, SiFirebase, SiNetflix],
+      link: "https://drive.google.com/drive/folders/1R_BqjaKN-09aeGVFqG3OhiPRpwMtwInp?usp=sharing",
       cover: "/Netflix.png",
       background: "bg-indigo-500",
     },
     {
       title: "Zeemail",
-      tech: [SiReact, SiTailwindcss, SiFirebase, SiChatbot],
+      tech: [SiReact, SiTailwindcss, SiFirebase, SiGmail],
       link: "http://zeemail.netlify.app",
       cover: "/Zeemail.png",
       background: "bg-green-500",
     },
     {
       title: "LoveFoods",
-      tech: [SiReact, SiTailwindcss, SiFirebase, SiChatbot],
-      link: "http://localhost:3000",
+      tech: [SiReact, SiTailwindcss, SiSwiggy],
+      link: "https://drive.google.com/drive/folders/1pVdehduISgw8T0n_MPgjyJ6eAuEBVhex?usp=sharing",
       cover: "/LoveFoods.png",
       background: "bg-green-500",
     },
     {
-      title: "Netflix GPT",
-      tech: [SiReact, SiTailwindcss, SiFirebase, SiChatbot],
+      title: "Spensive",
+      tech: [SiReact, SiTailwindcss, SiFirebase, BiSolidCalculator],
       link: "http://spensive.netlify.app",
       background: "bg-indigo-500",
       cover: "/Spensive.png",
